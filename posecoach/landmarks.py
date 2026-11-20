@@ -1,0 +1,76 @@
+"""MediaPipe Pose 的 33 点索引与绘制连线。"""
+
+
+NOSE = 0
+LEFT_SHOULDER = 11
+RIGHT_SHOULDER = 12
+LEFT_ELBOW = 13
+RIGHT_ELBOW = 14
+LEFT_WRIST = 15
+RIGHT_WRIST = 16
+LEFT_HIP = 23
+RIGHT_HIP = 24
+LEFT_KNEE = 25
+RIGHT_KNEE = 26
+LEFT_ANKLE = 27
+RIGHT_ANKLE = 28
+LEFT_HEEL = 29
+RIGHT_HEEL = 30
+LEFT_FOOT_INDEX = 31
+RIGHT_FOOT_INDEX = 32
+
+TORSO_CONNECTIONS = (
+    (11, 12),
+    (11, 23),
+    (12, 24),
+    (23, 24),
+)
+
+LEFT_ARM_CONNECTIONS = (
+    (11, 13),
+    (13, 15),
+    (15, 17),
+    (15, 19),
+    (15, 21),
+    (17, 19),
+)
+
+RIGHT_ARM_CONNECTIONS = (
+    (12, 14),
+    (14, 16),
+    (16, 18),
+    (16, 20),
+    (16, 22),
+    (18, 20),
+)
+
+LEFT_LEG_CONNECTIONS = (
+    (23, 25),
+    (25, 27),
+    (27, 29),
+    (27, 31),
+    (29, 31),
+)
+
+RIGHT_LEG_CONNECTIONS = (
+    (24, 26),
+    (26, 28),
+    (28, 30),
+    (28, 32),
+    (30, 32),
+)
+
+KEY_MEASUREMENT_LANDMARKS = (
+    LEFT_SHOULDER,
+    RIGHT_SHOULDER,
+    LEFT_HIP,
+    RIGHT_HIP,
+    LEFT_KNEE,
+    RIGHT_KNEE,
+    LEFT_ANKLE,
+    RIGHT_ANKLE,
+    LEFT_HEEL,
+    RIGHT_HEEL,
+    LEFT_FOOT_INDEX,
+    RIGHT_FOOT_INDEX,
+)
